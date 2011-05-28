@@ -71,6 +71,7 @@ typedef struct {
     uint32_t    user_data_max_size;
     uint32_t    header_offset;
     uint32_t    user_data_size;
+    unsigned char *user_data;
 } PACK_STRUCT mpq_header_user_s;
 
 /* mpq archive header. */
@@ -142,6 +143,7 @@ struct mpq_archive {
 	/* archive related buffers and tables. */
 	mpq_header_s	mpq_header;		/* mpq file header. */
 	mpq_header_ex_s	mpq_header_ex;		/* mpq extended file header. */
+	mpq_header_user_s mpq_header_user;
 	mpq_hash_s	*mpq_hash;		/* hash table. */
 	mpq_block_s	*mpq_block;		/* block table. */
 	mpq_block_ex_s	*mpq_block_ex;		/* extended block table. */

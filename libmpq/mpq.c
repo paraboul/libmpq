@@ -102,6 +102,7 @@ int32_t libmpq__archive_open(mpq_archive_s **mpq_archive, const char *mpq_filena
 	/* assign some default values. */
 	(*mpq_archive)->mpq_header.mpq_magic = 0;
 	(*mpq_archive)->files                = 0;
+	(*mpq_archive)->mpq_header_user.user_data = NULL;
 
 	/* loop through file and search for mpq signature. */
 	while (TRUE) {
@@ -153,7 +154,28 @@ int32_t libmpq__archive_open(mpq_archive_s **mpq_archive, const char *mpq_filena
 			/* break the loop, because header was found. */
 			break;
 		} else if ((*mpq_archive)->mpq_header.mpq_magic == LIBMPQ_HEADER_USER) {
-		
+		    unsigned char *user_data;
+		    memcpy(&(*mpq_archive)->mpq_header_user, ((char *)&(*mpq_archive)->mpq_header)+4, sizeof(mpq_header_user_s));
+		    
+		    if (fseeko((*mpq_archive)->fp, archive_offset+sizeof(mpq_header_user_s)-sizeof(unsigned char *), SEEK_SET) < 0) {
+			    /* seek in file failed. */
+			    result = LIBMPQ_ERROR_SEEK;
+			    goto error;
+		    }
+		    
+		    user_data = malloc((*mpq_archive)->mpq_header_user.user_data_size);
+		    if (user_data == NULL || fread(user_data, 1, (*mpq_archive)->mpq_header_user.user_data_size, (*mpq_archive)->fp) != (*mpq_archive)->mpq_header_user.user_data_size) {
+
+			    /* no valid mpq archive. */
+			    result = LIBMPQ_ERROR_FORMAT;
+			    goto error;
+		    }
+
+		    (*mpq_archive)->mpq_header_user.user_data = user_data;
+		    
+		    archive_offset += (*mpq_archive)->mpq_header_user.header_offset;
+		    
+		    continue;
 		}
 
 		/* move to the next possible offset. */
