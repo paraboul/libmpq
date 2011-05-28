@@ -157,7 +157,7 @@ int32_t libmpq__archive_open(mpq_archive_s **mpq_archive, const char *mpq_filena
 		    unsigned char *user_data;
 		    memcpy(&(*mpq_archive)->mpq_header_user, ((char *)&(*mpq_archive)->mpq_header)+4, sizeof(mpq_header_user_s));
 		    
-		    if (fseeko((*mpq_archive)->fp, archive_offset+sizeof(mpq_header_user_s)-sizeof(unsigned char *), SEEK_SET) < 0) {
+		    if (fseeko((*mpq_archive)->fp, 16, SEEK_SET) < 0) {
 			    /* seek in file failed. */
 			    result = LIBMPQ_ERROR_SEEK;
 			    goto error;
@@ -172,7 +172,7 @@ int32_t libmpq__archive_open(mpq_archive_s **mpq_archive, const char *mpq_filena
 		    }
 
 		    (*mpq_archive)->mpq_header_user.user_data = user_data;
-		    
+
 		    archive_offset += (*mpq_archive)->mpq_header_user.header_offset;
 		    
 		    continue;
@@ -319,6 +319,7 @@ error:
 	free((*mpq_archive)->mpq_hash);
 	free((*mpq_archive)->mpq_block);
 	free((*mpq_archive)->mpq_block_ex);
+	free((*mpq_archive)->mpq_header_user.user_data);
 	free(*mpq_archive);
 
 	*mpq_archive = NULL;
@@ -344,6 +345,7 @@ int32_t libmpq__archive_close(mpq_archive_s *mpq_archive) {
 	free(mpq_archive->mpq_hash);
 	free(mpq_archive->mpq_block);
 	free(mpq_archive->mpq_block_ex);
+	free(mpq_archive->mpq_header_user.user_data);
 	free(mpq_archive);
 
 	/* if no error was found, return zero. */
@@ -408,6 +410,13 @@ int32_t libmpq__archive_files(mpq_archive_s *mpq_archive, uint32_t *files) {
 
 	/* if no error was found, return zero. */
 	return LIBMPQ_SUCCESS;
+}
+
+int32_t libmpq__archive_read_user_block(mpq_archive_s *mpq_archive, uint8_t **outbuf) {
+
+    *outbuf = mpq_archive->mpq_header_user.user_data;
+    
+    return LIBMPQ_SUCCESS;
 }
 
 #define CHECK_FILE_NUM(file_number, mpq_archive) \

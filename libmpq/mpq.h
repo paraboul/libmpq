@@ -76,6 +76,7 @@ extern LIBMPQ_API int32_t libmpq__archive_unpacked_size(mpq_archive_s *mpq_archi
 extern LIBMPQ_API int32_t libmpq__archive_offset(mpq_archive_s *mpq_archive, libmpq__off_t *offset);
 extern LIBMPQ_API int32_t libmpq__archive_version(mpq_archive_s *mpq_archive, uint32_t *version);
 extern LIBMPQ_API int32_t libmpq__archive_files(mpq_archive_s *mpq_archive, uint32_t *files);
+extern LIBMPQ_API int32_t libmpq__archive_read_user_block(mpq_archive_s *mpq_archive, uint8_t **out_buf);
 
 /* generic file processing functions. */
 extern LIBMPQ_API int32_t libmpq__file_packed_size(mpq_archive_s *mpq_archive, uint32_t file_number, libmpq__off_t *packed_size);
