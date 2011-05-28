@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/270/libmpq/trunk/tools
+END
+crypt_buf_gen.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/270/libmpq/trunk/tools/crypt_buf_gen.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/257/libmpq/trunk/tools/Makefile.am
+END

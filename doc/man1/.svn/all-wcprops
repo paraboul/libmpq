@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/244/libmpq/trunk/doc/man1
+END
+libmpq-config.1
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/244/libmpq/trunk/doc/man1/libmpq-config.1
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/96/libmpq/trunk/doc/man1/Makefile.am
+END

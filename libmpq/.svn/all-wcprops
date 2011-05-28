@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/310/libmpq/trunk/libmpq
+END
+explode.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/291/libmpq/trunk/libmpq/explode.c
+END
+wave.c
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/309/libmpq/trunk/libmpq/wave.c
+END
+crypt_buf.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/270/libmpq/trunk/libmpq/crypt_buf.h
+END
+mpq.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/306/libmpq/trunk/libmpq/mpq.h
+END
+explode.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/299/libmpq/trunk/libmpq/explode.h
+END
+wave.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/123/libmpq/trunk/libmpq/wave.h
+END
+pack_end.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/298/libmpq/trunk/libmpq/pack_end.h
+END
+extract.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/292/libmpq/trunk/libmpq/extract.c
+END
+mpq-internal.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/304/libmpq/trunk/libmpq/mpq-internal.h
+END
+extract.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/276/libmpq/trunk/libmpq/extract.h
+END
+huffman.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/283/libmpq/trunk/libmpq/huffman.c
+END
+pack_begin.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/298/libmpq/trunk/libmpq/pack_begin.h
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/64/libmpq/trunk/libmpq/Makefile.am
+END
+common.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/308/libmpq/trunk/libmpq/common.c
+END
+huffman.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/283/libmpq/trunk/libmpq/huffman.h
+END
+platform.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/298/libmpq/trunk/libmpq/platform.h
+END
+mpq.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/310/libmpq/trunk/libmpq/mpq.c
+END
+common.h
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/308/libmpq/trunk/libmpq/common.h
+END

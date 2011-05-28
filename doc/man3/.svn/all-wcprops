@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/307/libmpq/trunk/doc/man3
+END
+libmpq__file_blocks.3
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/279/libmpq/trunk/doc/man3/libmpq__file_blocks.3
+END
+libmpq__file_packed_size.3
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/279/libmpq/trunk/doc/man3/libmpq__file_packed_size.3
+END
+libmpq.3
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/307/libmpq/trunk/doc/man3/libmpq.3
+END
+libmpq__block_open_offset.3
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/279/libmpq/trunk/doc/man3/libmpq__block_open_offset.3
+END
+libmpq__strerror.3
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/307/libmpq/trunk/doc/man3/libmpq__strerror.3
+END
+libmpq__archive_packed_size.3
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/279/libmpq/trunk/doc/man3/libmpq__archive_packed_size.3
+END
+libmpq__file_unpacked_size.3
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/279/libmpq/trunk/doc/man3/libmpq__file_unpacked_size.3
+END
+libmpq__version.3
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/123/libmpq/trunk/doc/man3/libmpq__version.3
+END
+libmpq__file_offset.3
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/279/libmpq/trunk/doc/man3/libmpq__file_offset.3
+END
+libmpq__archive_unpacked_size.3
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/279/libmpq/trunk/doc/man3/libmpq__archive_unpacked_size.3
+END
+libmpq__block_close_offset.3
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/279/libmpq/trunk/doc/man3/libmpq__block_close_offset.3
+END
+libmpq__block_read.3
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/279/libmpq/trunk/doc/man3/libmpq__block_read.3
+END
+libmpq__archive_version.3
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/279/libmpq/trunk/doc/man3/libmpq__archive_version.3
+END
+libmpq__file_number.3
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/279/libmpq/trunk/doc/man3/libmpq__file_number.3
+END
+libmpq__archive_offset.3
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/279/libmpq/trunk/doc/man3/libmpq__archive_offset.3
+END
+libmpq__file_encrypted.3
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/279/libmpq/trunk/doc/man3/libmpq__file_encrypted.3
+END
+libmpq__file_imploded.3
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/279/libmpq/trunk/doc/man3/libmpq__file_imploded.3
+END
+libmpq__block_unpacked_size.3
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/279/libmpq/trunk/doc/man3/libmpq__block_unpacked_size.3
+END
+libmpq__archive_open.3
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/279/libmpq/trunk/doc/man3/libmpq__archive_open.3
+END
+libmpq__file_compressed.3
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/279/libmpq/trunk/doc/man3/libmpq__file_compressed.3
+END
+libmpq__archive_files.3
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/279/libmpq/trunk/doc/man3/libmpq__archive_files.3
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/307/libmpq/trunk/doc/man3/Makefile.am
+END
+libmpq__archive_close.3
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/279/libmpq/trunk/doc/man3/libmpq__archive_close.3
+END
+libmpq__file_read.3
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/279/libmpq/trunk/doc/man3/libmpq__file_read.3
+END

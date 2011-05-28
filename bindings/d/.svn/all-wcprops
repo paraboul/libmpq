@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/296/libmpq/trunk/bindings/d
+END
+mpq.d
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/296/libmpq/trunk/bindings/d/mpq.d
+END
+dsss.conf
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/243/libmpq/trunk/bindings/d/dsss.conf
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/241/libmpq/trunk/bindings/d/Makefile.am
+END

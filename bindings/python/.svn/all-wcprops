@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/295/libmpq/trunk/bindings/python
+END
+mpq.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/295/libmpq/trunk/bindings/python/mpq.py
+END
+mpq-info
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/265/libmpq/trunk/bindings/python/mpq-info
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/223/libmpq/trunk/bindings/python/Makefile.am
+END
