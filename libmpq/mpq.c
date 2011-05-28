@@ -2,6 +2,7 @@
  *  mpq.c -- functions for developers using libmpq.
  *
  *  Copyright (c) 2003-2008 Maik Broemme <mbroemme@plusserver.de>
+ *  Copyright (c) 2011 Anthony Catel <a.catel@weelya.com>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -151,6 +152,8 @@ int32_t libmpq__archive_open(mpq_archive_s **mpq_archive, const char *mpq_filena
 
 			/* break the loop, because header was found. */
 			break;
+		} else if ((*mpq_archive)->mpq_header.mpq_magic == LIBMPQ_HEADER_USER) {
+		
 		}
 
 		/* move to the next possible offset. */

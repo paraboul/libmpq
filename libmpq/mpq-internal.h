@@ -3,6 +3,7 @@
  *                    compilation of the library.
  *
  *  Copyright (c) 2003-2008 Maik Broemme <mbroemme@plusserver.de>
+ *  Copyright (c) 2011 Anthony Catel <a.catel@weelya.com>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -31,6 +32,7 @@
 
 /* define generic mpq archive information. */
 #define LIBMPQ_HEADER				0x1A51504D	/* mpq archive header ('MPQ\x1A') */
+#define LIBMPQ_HEADER_USER			0x1B51504D  /* user data header ('MPQ\x1B') */
 
 /* define the known archive versions. */
 #define LIBMPQ_ARCHIVE_VERSION_ONE		0		/* version one used until world of warcraft. */
@@ -63,6 +65,14 @@
 #endif
 
 #include "pack_begin.h"
+
+/* user data block */
+typedef struct {
+    uint32_t    user_data_max_size;
+    uint32_t    header_offset;
+    uint32_t    user_data_size;
+} PACK_STRUCT mpq_header_user_s;
+
 /* mpq archive header. */
 typedef struct {
 	uint32_t	mpq_magic;		/* the 0x1A51504D ('MPQ\x1A') signature. */
