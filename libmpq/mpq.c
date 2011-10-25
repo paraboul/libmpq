@@ -2,7 +2,6 @@
  *  mpq.c -- functions for developers using libmpq.
  *
  *  Copyright (c) 2003-2008 Maik Broemme <mbroemme@plusserver.de>
- *  Copyright (c) 2011 Anthony Catel <a.catel@weelya.com>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -155,9 +154,11 @@ int32_t libmpq__archive_open(mpq_archive_s **mpq_archive, const char *mpq_filena
 			break;
 		} else if ((*mpq_archive)->mpq_header.mpq_magic == LIBMPQ_HEADER_USER) {
 		    unsigned char *user_data;
+		    
+		    /* copy the previously read data */
 		    memcpy(&(*mpq_archive)->mpq_header_user, ((char *)&(*mpq_archive)->mpq_header)+4, sizeof(mpq_header_user_s));
 		    
-		    if (fseeko((*mpq_archive)->fp, 16, SEEK_SET) < 0) {
+		    if (fseeko((*mpq_archive)->fp, archive_offset+16, SEEK_SET) < 0) {
 			    /* seek in file failed. */
 			    result = LIBMPQ_ERROR_SEEK;
 			    goto error;
@@ -412,10 +413,13 @@ int32_t libmpq__archive_files(mpq_archive_s *mpq_archive, uint32_t *files) {
 	return LIBMPQ_SUCCESS;
 }
 
-int32_t libmpq__archive_read_user_block(mpq_archive_s *mpq_archive, uint8_t **outbuf) {
+/* this function return the user data block (if present) and its size */
+int32_t libmpq__archive_get_user_data(mpq_archive_s *mpq_archive, uint8_t **out_buf, uint32_t *out_size) {
 
-    *outbuf = mpq_archive->mpq_header_user.user_data;
-    
+    *out_buf = mpq_archive->mpq_header_user.user_data;
+
+    *out_size = (*out_buf == NULL ? 0 : mpq_archive->mpq_header_user.user_data_size);
+
     return LIBMPQ_SUCCESS;
 }
 

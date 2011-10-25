@@ -3,7 +3,6 @@
  *                    compilation of the library.
  *
  *  Copyright (c) 2003-2008 Maik Broemme <mbroemme@plusserver.de>
- *  Copyright (c) 2011 Anthony Catel <a.catel@weelya.com>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by

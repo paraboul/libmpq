@@ -14,6 +14,7 @@ man_MANS =				\
 	libmpq__archive_packed_size.3	\
 	libmpq__archive_unpacked_size.3	\
 	libmpq__archive_version.3	\
+	libmpq__archive_get_user_data.3	\
 	libmpq__block_close_offset.3	\
 	libmpq__block_open_offset.3	\
 	libmpq__block_read.3		\
